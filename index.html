@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<title>Bootstrap</title>
+</head>
+<body>
+	<h1>Bootstrap uses the smallest breakpoint first</h1>
+	<div class="container">
+		<div class="row">
+			<p> Bij groter dan 1200px blijft het 1 rij. Tussen 1199 en 992 pixels zijn het 6 columns. Tussen 991 en 769 pixels 2 columns. Kleiner dan 768 pixels 4 colums</p>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-warning">
+				1
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-info">
+				2
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-danger">
+				3
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-success">
+				4
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-warning">
+				5
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-info">
+				6
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-danger">
+				7
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-success">
+				8
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-warning">
+				9
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-info">
+				10
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-danger">
+				11  
+			</div>
+			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-3 bg-success">
+				12
+			</div>
+		</div>
+		<div class="row">
+			<p> col-md (922px-1199px), bij kleiner dan 992 pixels klapt die eruit</p>
+			<div class="col-md-1   bg-warning">
+				1
+			</div>
+			<div class="col-md-1   bg-info">
+				2
+			</div>
+			<div class="col-md-1   bg-danger">
+				3
+			</div>
+			<div class="col-md-1   bg-success">
+				4
+			</div>
+			<div class="col-md-1   bg-warning">
+				5
+			</div>
+			<div class="col-md-1   bg-info">
+				6
+			</div>
+			<div class="col-md-1   bg-danger">
+				7
+			</div>
+			<div class="col-md-1   bg-success">
+				8
+			</div>
+			<div class="col-md-1   bg-warning">
+				9
+			</div>
+			<div class="col-md-1   bg-info">
+				10
+			</div>
+			<div class="col-md-1   bg-danger">
+				11  
+			</div>
+			<div class="col-md-1 bg-success">
+				12
+			</div>
+		</div>
+		<div class="row">
+			<p>  col-sm (768-991), bij kleiner dan 768 pixels klapt die eruit</p>
+			<div class="col-sm-1   bg-warning">
+				1
+			</div>
+			<div class="col-sm-1   bg-info">
+				2
+			</div>
+			<div class="col-sm-1   bg-danger">
+				3
+			</div>
+			<div class="col-sm-1   bg-success">
+				4
+			</div>
+			<div class="col-sm-1   bg-warning">
+				5
+			</div>
+			<div class="col-sm-1   bg-info">
+				6
+			</div>
+			<div class="col-sm-1   bg-danger">
+				7
+			</div>
+			<div class="col-sm-1   bg-success">
+				8
+			</div>
+			<div class="col-sm-1   bg-warning">
+				9
+			</div>
+			<div class="col-sm-1   bg-info">
+				10
+			</div>
+			<div class="col-sm-1   bg-danger">
+				11  
+			</div>
+			<div class="col-sm-1   bg-success">
+				12
+			</div>
+		</div>
+		<div class="row">
+			<p>  col-xs (kleiner dan 768), bij kleiner dan 345 pixels klapt die eruit</p>
+			<div class="col-xs-1   bg-warning">
+				1
+			</div>
+			<div class="col-xs-1   bg-info">
+				2
+			</div>
+			<div class="col-xs-1   bg-danger">
+				3
+			</div>
+			<div class="col-xs-1   bg-success">
+				4
+			</div>
+			<div class="col-xs-1   bg-warning">
+				5
+			</div>
+			<div class="col-xs-1   bg-info">
+				6
+			</div>
+			<div class="col-xs-1   bg-danger">
+				7
+			</div>
+			<div class="col-xs-1   bg-success">
+				8
+			</div>
+			<div class="col-xs-1   bg-warning">
+				9
+			</div>
+			<div class="col-xs-1   bg-info">
+				10
+			</div>
+			<div class="col-xs-1   bg-danger">
+				11  
+			</div>
+			<div class="col-xs-1   bg-success">
+				12
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-12   bg-warning">
+			<p>Outer</p>
+				<div class="row">
+					<div class="col-lg-6 bg-primary">
+						<p>
+							Inner, neemt 6 (50%) columns van het aantal columns van de parents over. EN heeft geen border door div class row
+						</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-6   bg-warning">
+			<p>Outer</p>
+				<div class="col-lg-12 bg-primary">
+					<p>
+						Inner, neemt 12 (100%) columns an het aantal columns van de parents  over
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+	<script src="js/jquery.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
